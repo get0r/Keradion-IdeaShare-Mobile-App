@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18779C</color>
+    <color name="colorPrimaryTransparent">#891E88E5</color>
+    <color name="colorPrimaryDark">#1D6E8F</color>
+    <color name="colorPrimaryDarkTransparent">#A41976D2</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccentTransparent">#76D81B60</color>
+    <color name="blurBlack">#5C5C5C</color>
+    <color name="custom_btn_color">#ff00acc1</color>
+    <color name="blue">#CC003BFF</color>
+    <color name="white">#fff</color>
+    <color name="blurWhite">#F0F0F0</color>
+    <color name="highBlurWhite">#535353</color>
+    <color name="black">#000</color>
+    <color name="red">#f00</color>
+</resources>

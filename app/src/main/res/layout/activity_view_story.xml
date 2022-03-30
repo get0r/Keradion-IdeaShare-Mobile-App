@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/act_view_story_toolbar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/rounded_edit_text"
+            android:src="@drawable/ic_action_back" />
+
+        <TextView
+            android:id="@+id/act_view_story_writerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/act_view_story_toolbar"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="admirations"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <View
+            android:id="@+id/toolbar_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/act_view_story_writerName"
+            android:background="@drawable/toolbar_dropshadow" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/act_write_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:padding="5dp"
+        android:text="Well Written"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/act_view_story_writtenDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="left"
+        android:padding="2dp"
+        android:text="admirations"
+        android:textColor="@color/blurBlack"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        android:layout_below="@id/act_write_title_view"/>
+
+    <com.mukesh.MarkdownView
+        android:id="@+id/act_view_story_viewer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/act_view_story_writtenDate"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/like_vbar"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/act_view_story_well_written"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/rounded_edit_text"
+                android:scaleType="center"
+                android:src="@drawable/ic_action_well_written2" />
+
+            <TextView
+                android:id="@+id/act_write_no_of_well"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="5000"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="admirations  "
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="italic|bold" />
+
+            <ImageButton
+                android:id="@+id/act_view_story_report"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/rounded_edit_text"
+                android:scaleType="center"
+                android:src="@drawable/ic_action_report" />
+
+            <ImageButton
+                android:id="@+id/act_view_story_save_offline"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/rounded_edit_text"
+                android:scaleType="center"
+                android:src="@drawable/ic_action_save_for_offline" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".activities.WriteActivity">
+
+    <include
+        android:id="@+id/act_write_toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <EditText
+        android:id="@+id/act_write_title_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:padding="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/white">
+
+        <xute.markdeditor.MarkDEditor
+            android:id="@+id/act_write_mdEditor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+
+    <xute.markdeditor.EditorControlBar
+        android:id="@+id/act_write_editorControlBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/act_write_topic_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Sub-Topic"
+            android:layout_weight="2" />
+
+        <Spinner
+            android:id="@+id/act_write_topic_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/act_write_postBtn"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_rounded_follow_btn"
+            android:text="Post"
+            android:textAllCaps="false"
+            android:textColor="@color/custom_btn_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

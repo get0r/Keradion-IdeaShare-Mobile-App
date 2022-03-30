@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/story_recycler_item_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:padding="16dp"
+    app:cardElevation="0.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/story_recycler_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="This is the First Header"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/story_recycler_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/story_recycler_item_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:text="fgchvbnmvchv"
+            android:textStyle="italic"
+            android:textColor="@color/blurBlack"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+
+            android:id="@+id/story_recycler_item_writer_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/story_recycler_item_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/story_recycler_item_writerimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/tab_frag_stoty_writer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Writer Name"
+                android:layout_toRightOf="@id/story_recycler_item_writerimg"
+                android:layout_toEndOf="@id/story_recycler_item_writerimg"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tab_frag_story_written_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="09 Mar 2012"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/story_recycler_item_writerimg"
+                android:textColor="@color/blurBlack"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/story_recycler_item_writer_pagename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tab_frag_story_written_date"
+                android:layout_below="@id/story_recycler_item_writerimg"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:text="in Page Name"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/story_recycler_item_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="bottom"
+                android:text="#Programming"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/blurBlack"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-medium" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/story_recycler_item_writer_row"
+            android:background="@color/blurWhite" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

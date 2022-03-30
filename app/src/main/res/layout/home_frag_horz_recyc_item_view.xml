@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_frag_horz_recyc_item_cardview"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="6dp"
+    android:padding="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_frag_horz_recyc_item_userimg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/icon"
+            app:civ_border_color="@color/custom_btn_color"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/home_frag_horz_recyc_item_userName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Natnael Tigistu"
+            android:layout_toRightOf="@id/home_frag_horz_recyc_item_userimg"
+            android:layout_toEndOf="@id/home_frag_horz_recyc_item_userimg"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/home_frag_horz_recyc_item_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="\@natitigistu"
+            android:layout_below="@id/home_frag_horz_recyc_item_userName"
+            android:layout_toRightOf="@id/home_frag_horz_recyc_item_userimg"
+            android:layout_toEndOf="@id/home_frag_horz_recyc_item_userimg"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/home_frag_horz_recyc_item_userdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="This is something the user or writer will
+write about himself usually this long.
+and topics he or she write about."
+            android:layout_below="@id/home_frag_horz_recyc_item_userimg"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textColor="@color/blurBlack"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/home_frag_horz_recy_item_folwBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Follow"
+            android:background="@drawable/custom_rounded_follow_btn"
+            android:layout_below="@id/home_frag_horz_recyc_item_userdetail"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

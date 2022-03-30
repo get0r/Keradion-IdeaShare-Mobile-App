@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_frag_horz_recyc_item_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tab_frag_people_userimg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/icon"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tab_frag_people_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Test User"
+            android:layout_toRightOf="@id/tab_frag_people_userimg"
+            android:layout_toEndOf="@id/tab_frag_people_userimg"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/tab_frag_people_followBtn"
+            android:tag="ic_person_add_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_person_add_black_24dp"
+            android:background="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Follow"
+            android:textAllCaps="false"
+            />
+
+        <TextView
+            android:id="@+id/tab_frag_people_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_below="@id/tab_frag_people_userName"
+            android:layout_toRightOf="@id/tab_frag_people_userimg"
+            android:layout_toEndOf="@id/tab_frag_people_userimg"
+            android:textColor="@color/blurBlack"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tab_frag_people_userdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test bio"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tab_frag_people_username"
+            android:layout_toRightOf="@id/tab_frag_people_userimg"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textColor="@color/blurBlack"
+            android:textSize="13sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
